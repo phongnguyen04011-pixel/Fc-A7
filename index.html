@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A7-K53 TĐ | Website Chính Thức</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- 1. HEADER & NAVIGATION -->
+    <header class="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-shield-halved"></i>
+            <span>A7-K53 TĐ</span>
+        </div>
+        <nav class="nav-links">
+            <a href="#" class="nav-btn active" onclick="switchPage('home', this)">Trang chủ</a>
+            <a href="#" class="nav-btn" onclick="switchPage('matches', this)">Lịch & Bảng xếp hạng</a>
+            <a href="#" class="nav-btn" onclick="switchPage('squad', this)">Đội hình</a>
+            <a href="#" class="nav-btn" onclick="switchPage('news', this)">Tin tức</a>
+            <a href="#" class="nav-btn" onclick="switchPage('shop', this)">Cửa hàng</a>
+        </nav>
+        <div class="nav-actions">
+            <a href="#" class="btn-primary"><i class="fa-solid fa-user"></i> Đăng nhập</a>
+        </div>
+    </header>
+
+    <!-- ==================== TRANG CHỦ (HOME PAGE) ==================== -->
+    <div id="page-home" class="page-section active">
+        <!-- HERO BANNER -->
+        <section class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <span class="badge">Trận đấu tiếp theo</span>
+                <h1>A7-K53 TĐ BƯỚC VÀO TRẬN DERBY QUAN TRỌNG</h1>
+                <p>19:30 - Chủ Nhật, 04/10/2026 | Sân vận động Trung tâm</p>
+                <div class="hero-btns">
+                    <a href="#" class="btn-accent" onclick="switchPage('matches', document.querySelectorAll('.nav-btn')[1])">Xem Lịch Thi Đấu</a>
+                    <a href="#" class="btn-outline" onclick="switchPage('squad', document.querySelectorAll('.nav-btn')[2])">Xem Đội Hình</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- MATCH CENTER NỔI BẬT -->
+        <section class="match-center">
+            <div class="container">
+                <div class="match-card previous">
+                    <span class="match-status">KẾT QUẢ VÒNG VỪA QUA</span>
+                    <div class="teams">
+                        <div class="team">
+                            <i class="fa-solid fa-shield-halved team-logo"></i>
+                            <span>A7-K53 TĐ</span>
+                        </div>
+                        <div class="score">3 - 1</div>
+                        <div class="team">
+                            <i class="fa-solid fa-shield team-logo"></i>
+                            <span>Rival FC</span>
+                        </div>
+                    </div>
+                    <a href="#" class="match-link">Highlights & Báo cáo <i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+
+                <div class="match-card next highlighted">
+                    <span class="match-status live-badge">TRẬN ĐẤU SẮP TỚI</span>
+                    <div class="teams">
+                        <div class="team">
+                            <i class="fa-solid fa-shield team-logo"></i>
+                            <span>United FC</span>
+                        </div>
+                        <div class="score">VS</div>
+                        <div class="team">
+                            <i class="fa-solid fa-shield-halved team-logo"></i>
+                            <span>A7-K53 TĐ</span>
+                        </div>
+                    </div>
+                    <p class="match-time">04/10/2026 - 19:30</p>
+                    <a href="#" class="match-link">Đến Trung tâm Trận đấu <i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- TIN TỨC NỔI BẬT -->
+        <section class="news-section">
+            <div class="container">
+                <h2 class="section-title">TIN TỨC MỚI NHẤT</h2>
+                <div class="news-grid">
+                    <article class="news-card">
+                        <div class="news-img" style="background-image: url('https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=600&q=80');"></div>
+                        <div class="news-content">
+                            <span class="news-category">Đội một</span>
+                            <h3>A7-K53 TĐ tích cực luyện tập chuẩn bị cho trận đấu quan trọng</h3>
+                            <p>Toàn đội A7-K53 TĐ đang có thể lực và tinh thần cao nhất trước thềm vòng đấu tới...</p>
+                            <span class="news-date">26/09/2026</span>
+                        </div>
+                    </article>
+
+                    <article class="news-card">
+                        <div class="news-img" style="background-image: url('https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=600&q=80');"></div>
+                        <div class="news-content">
+                            <span class="news-category">Thương mại</span>
+                            <h3>Ra mắt mẫu áo đấu chính thức mùa giải 2026/27 của A7-K53 TĐ</h3>
+                            <p>Thiết kế đột phá với tông màu xám trắng thanh lịch, tối tân và đẳng cấp...</p>
+                            <span class="news-date">25/09/2026</span>
+                        </div>
+                    </article>
+
+                    <article class="news-card">
+                        <div class="news-img" style="background-image: url('https://images.unsplash.com/photo-1517649763962-0c623266ddc0?auto=format&fit=crop&w=600&q=80');"></div>
+                        <div class="news-content">
+                            <span class="news-category">Học viện</span>
+                            <h3>Đội trẻ A7-K53 TĐ tiếp tục chuỗi trận bất bại</h3>
+                            <p>Các tài năng trẻ thi đấu ấn tượng và giành thắng lợi thuyết phục 4-0...</p>
+                            <span class="news-date">24/09/2026</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- ==================== TRANG LỊCH THI ĐẤU & BẢNG XẾP HẠNG ==================== -->
+    <div id="page-matches" class="page-section">
+        <section class="subpage-header">
+            <div class="container">
+                <h2>LỊCH THI ĐẤU & BẢNG XẾP HẠNG</h2>
+                <p>Mùa giải 2026/2027</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container layout-two-col">
+                <!-- Lịch thi đấu -->
+                <div class="col-left">
+                    <h3 class="sub-title"><i class="fa-regular fa-calendar-days"></i> LỊCH THI ĐẤU A7-K53 TĐ</h3>
+                    <div class="fixture-list">
+                        <div class="fixture-item">
+                            <div class="fixture-date">Vòng 6 | 04/10/2026</div>
+                            <div class="fixture-teams">
+                                <span>United FC</span>
+                                <span class="badge-vs">VS</span>
+                                <strong>A7-K53 TĐ</strong>
+                            </div>
+                            <div class="fixture-time">19:30 - Sân Khách</div>
+                        </div>
+                        <div class="fixture-item">
+                            <div class="fixture-date">Vòng 7 | 11/10/2026</div>
+                            <div class="fixture-teams">
+                                <strong>A7-K53 TĐ</strong>
+                                <span class="badge-vs">VS</span>
+                                <span>City FC</span>
+                            </div>
+                            <div class="fixture-time">18:00 - Sân Nhà</div>
+                        </div>
+                        <div class="fixture-item">
+                            <div class="fixture-date">Vòng 8 | 18/10/2026</div>
+                            <div class="fixture-teams">
+                                <span>Alliance FC</span>
+                                <span class="badge-vs">VS</span>
+                                <strong>A7-K53 TĐ</strong>
+                            </div>
+                            <div class="fixture-time">20:00 - Sân Khách</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bảng xếp hạng -->
+                <div class="col-right">
+                    <h3 class="sub-title"><i class="fa-solid fa-list-ol"></i> BẢNG XẾP HẠNG GIẢI ĐẤU</h3>
+                    <table class="standings-table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Đội bóng</th>
+                                <th>ST</th>
+                                <th>HS</th>
+                                <th>Đ</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="highlight-row">
+                                <td>1</td>
+                                <td><strong>A7-K53 TĐ</strong></td>
+                                <td>5</td>
+                                <td>+8</td>
+                                <td><strong>13</strong></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Rival FC</td>
+                                <td>5</td>
+                                <td>+5</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>United FC</td>
+                                <td>5</td>
+                                <td>+2</td>
+                                <td>9</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>City FC</td>
+                                <td>5</td>
+                                <td>-1</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Alliance FC</td>
+                                <td>5</td>
+                                <td>-4</td>
+                                <td>4</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- ==================== TRANG ĐỘI HÌNH CHI TIẾT ==================== -->
+    <div id="page-squad" class="page-section">
+        <section class="subpage-header">
+            <div class="container">
+                <h2>ĐỘI HÌNH CÂU LẠC BỘ A7-K53 TĐ</h2>
+                <p>Danh sách ban huấn luyện và các cầu thủ chính thức</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                
+                <!-- Thủ môn -->
+                <h3 class="position-group-title">THỦ MÔN (GOALKEEPERS)</h3>
+                <div class="squad-grid">
+                    <div class="player-card">
+                        <div class="player-number">01</div>
+                        <div class="player-info">
+                            <span class="position">THỦ MÔN</span>
+                            <h4>NGUYỄN VĂN A</h4>
+                        </div>
+                    </div>
+                    <div class="player-card">
+                        <div class="player-number">22</div>
+                        <div class="player-info">
+                            <span class="position">THỦ MÔN</span>
+                            <h4>TRAN B.</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hậu vệ -->
+                <h3 class="position-group-title" style="margin-top: 40px;">HẬU VỆ (DEFENDERS)</h3>
+                <div class="squad-grid">
+                    <div class="player-card">
+                        <div class="player-number">04</div>
+                        <div class="player-info">
+                            <span class="position">HẬU VỆ</span>
+                            <h4>MARCUS STONE</h4>
+                        </div>
+                    </div>
+                    <div class="player-card">
+                        <div class="player-number">05</div>
+                        <div class="player-info">
+                            <span class="position">HẬU VỆ</span>
+                            <h4>LÊ HOÀNG C.</h4>
+                        </div>
+                    </div>
+                    <div class="player-card">
+                        <div class="player-number">03</div>
+                        <div class="player-info">
+                            <span class="position">HẬU VỆ</span>
+                            <h4>PHẠM D.</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tiền vệ -->
+                <h3 class="position-group-title" style="margin-top: 40px;">TIỀN VỆ (MIDFIELDERS)</h3>
+                <div class="squad-grid">
+                    <div class="player-card">
+                        <div class="player-number">10</div>
+                        <div class="player-info">
+                            <span class="position">TIỀN VỆ</span>
+                            <h4>LUCAS SILVA</h4>
+                        </div>
+                    </div>
+                    <div class="player-card">
+                        <div class="player-number">08</div>
+                        <div class="player-info">
+                            <span class="position">TIỀN VỆ</span>
+                            <h4>HOÀNG VĂN E.</h4>
+                        </div>
+                    </div>
+                    <div class="player-card">
+                        <div class="player-number">06</div>
+                        <div class="player-info">
+                            <span class="position">TIỀN VỆ</span>
+                            <h4>ĐẶNG F.</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tiền đạo -->
+                <h3 class="position-group-title" style="margin-top: 40px;">TIỀN ĐẠO (FORWARDS)</h3>
+                <div class="squad-grid">
+                    <div class="player-card">
+                        <div class="player-number">07</div>
+                        <div class="player-info">
+                            <span class="position">TIỀN ĐẠO</span>
+                            <h4>ALEXANDER V.</h4>
+                        </div>
+                    </div>
+                    <div class="player-card">
+                        <div class="player-number">09</div>
+                        <div class="player-info">
+                            <span class="position">TIỀN ĐẠO</span>
+                            <h4>NGUYỄN NAM PHONG</h4>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <!-- ==================== TRANG TIN TỨC ==================== -->
+    <div id="page-news" class="page-section">
+        <section class="subpage-header">
+            <div class="container">
+                <h2>TIN TỨC & BẢN TIN CLB</h2>
+                <p>Cập nhật những thông tin mới nhất về A7-K53 TĐ</p>
+            </div>
+        </section>
+        <section class="content-section">
+            <div class="container">
+                <div class="news-grid">
+                    <article class="news-card">
+                        <div class="news-img" style="background-image: url('https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=600&q=80');"></div>
+                        <div class="news-content">
+                            <span class="news-category">Đội một</span>
+                            <h3>A7-K53 TĐ tích cực luyện tập chuẩn bị cho trận đấu quan trọng</h3>
+                            <p>Toàn đội A7-K53 TĐ đang có thể lực và tinh thần cao nhất trước thềm vòng đấu tới...</p>
+                            <span class="news-date">26/09/2026</span>
+                        </div>
+                    </article>
+                    <article class="news-card">
+                        <div class="news-img" style="background-image: url('https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=600&q=80');"></div>
+                        <div class="news-content">
+                            <span class="news-category">Thương mại</span>
+                            <h3>Ra mắt mẫu áo đấu chính thức mùa giải 2026/27 của A7-K53 TĐ</h3>
+                            <p>Thiết kế đột phá với tông màu xám trắng thanh lịch, tối tân và đẳng cấp...</p>
+                            <span class="news-date">25/09/2026</span>
+                        </div>
+                    </article>
+                    <article class="news-card">
+                        <div class="news-img" style="background-image: url('https://images.unsplash.com/photo-1517649763962-0c623266ddc0?auto=format&fit=crop&w=600&q=80');"></div>
+                        <div class="news-content">
+                            <span class="news-category">Học viện</span>
+                            <h3>Đội trẻ A7-K53 TĐ tiếp tục chuỗi trận bất bại</h3>
+                            <p>Các tài năng trẻ thi đấu ấn tượng và giành thắng lợi thuyết phục 4-0...</p>
+                            <span class="news-date">24/09/2026</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- ==================== TRANG CỬA HÀNG ==================== -->
+    <div id="page-shop" class="page-section">
+        <section class="subpage-header">
+            <div class="container">
+                <h2>CỬA HÀNG CHÍNH THỨC</h2>
+                <p>Sản phẩm chính hãng của A7-K53 TĐ</p>
+            </div>
+        </section>
+        <section class="content-section">
+            <div class="container">
+                <div class="shop-grid">
+                    <div class="product-card">
+                        <div class="product-img" style="background-color: #e5e5e5; height: 200px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fa-solid fa-shirt fa-5x" style="color: #666;"></i>
+                        </div>
+                        <h4>Áo Đấu A7-K53 TĐ Sân Nhà</h4>
+                        <p class="price">1.890.000 VNĐ</p>
+                        <button class="btn-accent-sm">Thêm vào giỏ</button>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img" style="background-color: #e5e5e5; height: 200px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fa-solid fa-shirt fa-5x" style="color: #333;"></i>
+                        </div>
+                        <h4>Áo Đấu A7-K53 TĐ Sân Khách</h4>
+                        <p class="price">1.890.000 VNĐ</p>
+                        <button class="btn-accent-sm">Thêm vào giỏ</button>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img" style="background-color: #e5e5e5; height: 200px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fa-solid fa-hat-cowboy fa-5x" style="color: #888;"></i>
+                        </div>
+                        <h4>Mũ Lưỡi Trai A7-K53 TĐ</h4>
+                        <p class="price">450.000 VNĐ</p>
+                        <button class="btn-accent-sm">Thêm vào giỏ</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- FOOTER CHUNG -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <div class="logo">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <span>A7-K53 TĐ</span>
+                </div>
+                <p>Câu lạc bộ bóng đá A7-K53 TĐ - Khát vọng, đoàn kết và vinh quang.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Liên kết nhanh</h4>
+                <ul>
+                    <li><a href="#" onclick="switchPage('matches', document.querySelectorAll('.nav-btn')[1])">Lịch thi đấu & Kết quả</a></li>
+                    <li><a href="#" onclick="switchPage('squad', document.querySelectorAll('.nav-btn')[2])">Đội hình chính</a></li>
+                    <li><a href="#" onclick="switchPage('shop', document.querySelectorAll('.nav-btn')[4])">Cửa hàng chính thức</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Theo dõi A7-K53 TĐ</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Câu lạc bộ bóng đá A7-K53 TĐ. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- SCRIPT CHUYỂN TRANG MƯỢT MÀ -->
+    <script>
+        function switchPage(pageId, element) {
+            // Ẩn tất cả các trang
+            const pages = document.querySelectorAll('.page-section');
+            pages.forEach(page => page.classList.remove('active'));
+
+            // Bỏ active ở tất cả nav-links
+            const navs = document.querySelectorAll('.nav-btn');
+            navs.forEach(nav => nav.classList.remove('active'));
+
+            // Hiển thị trang được chọn
+            const targetPage = document.getElementById('page-' + pageId);
+            if(targetPage) {
+                targetPage.classList.add('active');
+            }
+
+            // Đánh dấu nav đang active
+            if(element) {
+                element.classList.add('active');
+            }
+
+            // Cuộn lên đầu trang
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
